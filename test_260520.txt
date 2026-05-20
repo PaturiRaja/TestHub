@@ -1,0 +1,4 @@
+#TC_ID/PC_ID , Testcase_Description , Service_ID , SubService_ID , Expected_Response_Data , Write_Data , Addressing , Format , Status_Mask , Communication_Type , controltype
+TC_ID-645 , PreCondition: PC_ID-003  Testcase:Fault memory clear Extended session(14 FFFFFF) , 0x14 , 0xFFFFFF , 01 54 AA AA AA AA AA AA ,    , Physical , Hex ,    ,    ,   
+TC_ID-646 , PreCondition: PC_ID-003  Testcase:Fault memory clear Extended session(14 FFFFFF) , 0x14 , 0x8000FF , 01 54 AA AA AA AA AA AA ,    , Physical , Hex ,    ,    ,   
+TC_ID-647 , PreCondition: PC_ID-003  Testcase:Conditions not correct(invalid range)(14 FFEEEE) , 0x14 , 0xFFFFFE , 03 7F 14 31 AA AA AA AA ,    , Physical , Hex ,    ,    ,   
