@@ -16,19 +16,19 @@
     "font_size": 9
   },
   "uds": {
-    "target_ecu": "MKBD",
+    "target_ecu": "MFSW",
     "logging": {
       "filters": true
     },
     "addressing_modes": {
       "physical": {
-        "tx_id": "0x716",
-        "rx_id": "0x71E",
+        "tx_id": "0x7A6",
+        "rx_id": "0x7AE",
         "is_extended": false
       },
       "functional": {
-        "tx_id": "0x7DF",
-        "rx_id": "0x71E",
+        "tx_id": "0x0",
+        "rx_id": "0x7AE",
         "is_extended": false
       }
     },
@@ -36,26 +36,26 @@
       "ip": "192.168.10.220",
       "port": 5005,
       "max_retries": 3,
-      "retry_delay": 1,
+      "retry_delay": 1.0,
       "expected_key_length": 8
     },
     "can": {
-      "channel": "can1",
+      "channel": "can0",
       "interface": "socketcan",
       "bringup_on_startup": true,
       "shutdown_on_exit": true,
-      "bitrate": 5000000,
+      "bitrate": 500000,
       "dbitrate": 1000000,
       "restart_ms": 1000,
-      "can_fd": true
+      "can_fd": false
     },
     "isotp": {
-      "stmin": 1000,
+      "stmin": 10,
       "blocksize": 8,
       "wftmax": 0,
       "tx_padding": 0,
       "max_frame_size": 4095,
-      "can_fd": true,
+      "can_fd": false,
       "bitrate_switch": true
     },
     "delays": {
@@ -63,7 +63,7 @@
     },
     "immediate_mode": true,
     "timing": {
-      "s3_client": 3000,
+      "s3_client": 1000,
       "s3_server": 5000,
       "p2_client": 150,
       "p2_extended_client": 5000,
